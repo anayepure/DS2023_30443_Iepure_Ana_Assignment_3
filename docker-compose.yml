@@ -42,12 +42,12 @@ services:
     networks:
       - DS_SQL_SPRING
 
-  rabbitmq:
-    image: rabbitmq:3.9.11-management-alpine
-    container_name: rabbitmq
-    ports:
-      - "5672:5672"
-      - "15672:15672"
+  #rabbitmq:
+    #image: rabbitmq:3.9.11-management-alpine
+    #container_name: rabbitmq
+    #ports:
+     # - "5672:5672"
+     # - "15672:15672"
 
 networks:
     DS_SQL_SPRING:
