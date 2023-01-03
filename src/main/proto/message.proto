@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.example.dsproject;
+
+message MessageRequest
+{
+  string from = 1;
+  string msg = 2;
+  string time = 3;
+}
+message Empty {}
