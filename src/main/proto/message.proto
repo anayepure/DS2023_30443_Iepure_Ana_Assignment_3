@@ -1,11 +1,15 @@
 syntax = "proto3";
 option java_multiple_files = true;
-package com.example.dsproject;
 
-message MessageRequest
-{
-  string from = 1;
-  string msg = 2;
-  string time = 3;
+
+message MessageResponse{
+  string message = 1;
 }
-message Empty {}
+
+message MessageRequest {
+  string message = 1;
+}
+
+service ChatService {
+  rpc message(MessageRequest) returns (MessageResponse) {}
+}
