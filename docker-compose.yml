@@ -30,8 +30,8 @@ services:
   frontend:
     image: frontend-energy
     build:
-      context: D:\DS\ds-project -backend\energy-system
-      dockerfile: D:\DS\ds-project -backend\energy-system\Dockerfile
+      context: D:\DS\ds-project-backend\energy-system
+      dockerfile: D:\DS\ds-project-backend\energy-system\Dockerfile
     depends_on:
       - app
     container_name: frontend
